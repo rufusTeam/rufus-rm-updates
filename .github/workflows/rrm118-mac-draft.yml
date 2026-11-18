@@ -1,0 +1,33 @@
+name: Prepare verified RRM 1.1.8 Mac draft
+
+on:
+  push:
+    branches: [codex/rrm118-mac-draft-20261119]
+    paths:
+      - .github/workflows/rrm118-mac-draft.yml
+      - releases/1.1.8/mac/**
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrm118-mac-draft
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: github.repository == 'rufusTeam/rufus-rm-updates'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Check release guards offline
+        run: python3 releases/1.1.8/mac/test-draft-guards.py
+      - name: Verify every S3 byte and create only the new draft
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 releases/1.1.8/mac/prepare-draft.py
