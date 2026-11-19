@@ -20,7 +20,9 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
-      contents: read
+      # GitHub draft visibility requires the existing release-management scope.
+      # The selected inspection script still permits GET requests only.
+      contents: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
