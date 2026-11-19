@@ -1,4 +1,4 @@
-name: Inspect RRM 1.1.8 Mac draft documents
+name: Restore intended RRM 1.1.8 draft tag
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
           persist-credentials: false
       - name: Verify finalization guards offline
         run: python3 releases/1.1.8/mac-finalize/test-finalize-guards.py
-      - name: Inspect existing draft and protected stable release without mutations
+      - name: Restore only the intended draft tag after exact readback checks
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 releases/1.1.8/mac-finalize/inspect-draft.py
+        run: python3 releases/1.1.8/mac-finalize/retag-draft.py
