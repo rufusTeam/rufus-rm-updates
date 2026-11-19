@@ -1,4 +1,4 @@
-name: Restore intended RRM 1.1.8 draft tag
+name: Archived RRM 1.1.8 Mac draft finalization
 
 on:
   push:
@@ -16,13 +16,13 @@ concurrency:
 
 jobs:
   finalize:
-    if: github.repository == 'rufusTeam/rufus-rm-updates'
+    # One-use operation completed and verified in run 44496544812.
+    # A later release operation requires a new reviewed plan and fresh state.
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
-      # GitHub draft visibility requires the existing release-management scope.
-      # The selected inspection script still permits GET requests only.
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:

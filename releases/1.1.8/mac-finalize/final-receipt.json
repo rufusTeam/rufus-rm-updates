@@ -1,0 +1,91 @@
+{
+  "release_id": 450687888,
+  "tag": "v1.1.8",
+  "draft": true,
+  "url": "https://github.com/rufusTeam/rufus-rm-updates/releases/tag/untagged-4940402c4124e7053ffe",
+  "status": "MAC_WEB_CORE_ACCEPTED_DRAFT_PENDING_WINDOWS",
+  "mcp_excluded_by_owner": true,
+  "assets": [
+    {
+      "id": 765424863,
+      "name": "RUFUS-Race-Manager-1.1.8-arm64.dmg",
+      "size": 115270907,
+      "digest": "sha256:42f79cf76046cd4a4a3e7093e1373d19907a773f496a1957a8966b691c485b3b",
+      "state": "uploaded"
+    },
+    {
+      "id": 765425211,
+      "name": "RUFUS-Race-Manager-1.1.8-arm64.dmg.blockmap",
+      "size": 120566,
+      "digest": "sha256:867d9d18b5bc998501930866de7ffc13dfbef6494f201116cb54de8d6a5931dc",
+      "state": "uploaded"
+    },
+    {
+      "id": 765425241,
+      "name": "RUFUS-Race-Manager-1.1.8-x64.dmg",
+      "size": 121662832,
+      "digest": "sha256:7c0a528d8e955f40b5c10cb9b43c1a876c317568bd68c8d8f65b713922ef998b",
+      "state": "uploaded"
+    },
+    {
+      "id": 765425520,
+      "name": "RUFUS-Race-Manager-1.1.8-x64.dmg.blockmap",
+      "size": 126259,
+      "digest": "sha256:d8cfe54d70f08fd1ce3e2be5082a959c15f97a02fb8783b334888fb18d5ed880",
+      "state": "uploaded"
+    },
+    {
+      "id": 765425574,
+      "name": "latest-mac.yml",
+      "size": 526,
+      "digest": "sha256:86c1cd6bc95402102e0afa7504688f892ba16ebcc8bb4dc9c5315d73981495f1",
+      "state": "uploaded"
+    },
+    {
+      "id": 767019306,
+      "name": "RELEASE-NOTES-1.1.8-MAC-EN.md",
+      "size": 1716,
+      "digest": "sha256:111a30a8356249b919a296941fc5716b1b84597bed01abf4e978fd41d42a8686",
+      "state": "uploaded"
+    },
+    {
+      "id": 767019356,
+      "name": "RELEASE-SOURCES-1.1.8-MAC.json",
+      "size": 3815,
+      "digest": "sha256:c044bf03b1f4de5f758d861e609354a95ae1079c795274a63e6fabb2dcdfde58",
+      "state": "uploaded"
+    },
+    {
+      "id": 767019393,
+      "name": "SHA256SUMS-MAC.txt",
+      "size": 692,
+      "digest": "sha256:50bcf27736285c10ea5e91fc3df0e8bd3e377d197b049fac80e17008f3de704e",
+      "state": "uploaded"
+    }
+  ],
+  "protected_mac_binary_assets_unchanged": true,
+  "stable_117_release_and_assets_preserved": true,
+  "document_update_verified_by_readback": true,
+  "draft_tag_restored_with_single_explicit_patch": true,
+  "workflow": {
+    "commit": "7c6b3d178602534f0439e9eb6f6d8a94a3e53470",
+    "run_id": 44496544812,
+    "job_id": 135465065535,
+    "conclusion": "success",
+    "url": "https://github.com/rufusTeam/rufus-rm-updates/actions/runs/44496544812"
+  },
+  "resolvedCheckpoints": [
+    {
+      "run_id": 44495242613,
+      "status": "failed final tag assertion after three documentation updates; no binary replacement or stable publication"
+    },
+    {
+      "run_id": 44495744338,
+      "status": "read-only inspection 403 with read-only job scope; no mutation"
+    },
+    {
+      "run_id": 44496071103,
+      "status": "authorized readback succeeded with existing release-management job scope; draft placeholder and eight assets verified"
+    }
+  ]
+}
