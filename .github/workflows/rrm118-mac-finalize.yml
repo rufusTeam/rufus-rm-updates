@@ -1,4 +1,4 @@
-name: Finalize RRM 1.1.8 Mac draft documents
+name: Inspect RRM 1.1.8 Mac draft documents
 
 on:
   push:
@@ -20,14 +20,14 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false
       - name: Verify finalization guards offline
         run: python3 releases/1.1.8/mac-finalize/test-finalize-guards.py
-      - name: Update only three documents in the existing draft
+      - name: Inspect existing draft and protected stable release without mutations
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 releases/1.1.8/mac-finalize/finalize-draft.py
+        run: python3 releases/1.1.8/mac-finalize/inspect-draft.py
