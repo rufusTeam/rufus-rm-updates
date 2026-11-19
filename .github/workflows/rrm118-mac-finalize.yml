@@ -1,0 +1,33 @@
+name: Finalize RRM 1.1.8 Mac draft documents
+
+on:
+  push:
+    branches: [codex/rrm118-mac-finalize-20261119]
+    paths:
+      - .github/workflows/rrm118-mac-finalize.yml
+      - releases/1.1.8/mac-finalize/**
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrm118-mac-draft
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.repository == 'rufusTeam/rufus-rm-updates'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Verify finalization guards offline
+        run: python3 releases/1.1.8/mac-finalize/test-finalize-guards.py
+      - name: Update only three documents in the existing draft
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 releases/1.1.8/mac-finalize/finalize-draft.py
