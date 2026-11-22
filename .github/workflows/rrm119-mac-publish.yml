@@ -16,11 +16,12 @@ concurrency:
 
 jobs:
   publish:
-    if: github.repository == 'rufusTeam/rufus-rm-updates'
+    # Publication completed in run 45077073532; retain this workflow as an archived receipt.
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
