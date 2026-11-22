@@ -1,0 +1,34 @@
+name: Publish verified RRM 1.1.9 Mac assets
+
+on:
+  push:
+    branches: [codex/rrm119-mac-publish-20261122]
+    paths:
+      - .github/workflows/rrm119-mac-publish.yml
+      - releases/1.1.9/mac/**
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rrm119-mac-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Publication completed in run 45077073532; retain this workflow as an archived receipt.
+    if: ${{ false }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check immutable Windows and release target guards
+        run: python3 releases/1.1.9/mac/test_publication_guards.py
+      - name: Verify S3 bodies and add only the accepted Mac assets
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 releases/1.1.9/mac/publish_mac.py
