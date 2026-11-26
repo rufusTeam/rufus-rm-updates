@@ -1,0 +1,165 @@
+{
+  "status": "PUBLISHED_VERIFIED",
+  "releaseId": 458713908,
+  "tag": "v1.1.10",
+  "assets": [
+    {
+      "id": 795133859,
+      "name": "latest-mac.yml",
+      "size": 530,
+      "digest": "sha256:89a1c2b8dd25fa62ed020bfb2cfe9bdacb903b5c5eebaefde2115a5f60a99747",
+      "updated_at": "2026-11-26T09:21:00Z"
+    },
+    {
+      "id": 793370995,
+      "name": "latest.yml",
+      "size": 368,
+      "digest": "sha256:9bf949865586c1d14f99354993186e8f416de1c2a5734c872016edd455c33458",
+      "updated_at": "2026-11-25T22:22:44Z"
+    },
+    {
+      "id": 795133224,
+      "name": "RELEASE-NOTES-1.1.10-MAC-EN.md",
+      "size": 810,
+      "digest": "sha256:d5e3fe09baa19117d1978ab518a7c53d3602920e7444f6904b72d6a71c101a1b",
+      "updated_at": "2026-11-26T09:20:50Z"
+    },
+    {
+      "id": 793371026,
+      "name": "RELEASE-NOTES-1.1.10-WINDOWS-EN.md",
+      "size": 834,
+      "digest": "sha256:996eeeb7927063998a0b6d48d8595c0c1815f3b3ff9f6ffe669bdf1d8284774a",
+      "updated_at": "2026-11-25T22:22:45Z"
+    },
+    {
+      "id": 795133261,
+      "name": "RELEASE-SOURCES-1.1.10-MAC.json",
+      "size": 3981,
+      "digest": "sha256:d7a517914dda3f4f10ed68197ca32341ef2f9d6e13f1118aea43478a087e3af7",
+      "updated_at": "2026-11-26T09:20:51Z"
+    },
+    {
+      "id": 793371134,
+      "name": "RELEASE-SOURCES-1.1.10-WINDOWS.json",
+      "size": 4966,
+      "digest": "sha256:0bc5762c94b846aa729472e47a3deb11f9a81de58b6cde20e7fcbd7132b3759d",
+      "updated_at": "2026-11-25T22:22:46Z"
+    },
+    {
+      "id": 795133315,
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg",
+      "size": 115831369,
+      "digest": "sha256:d456f0c15f2e6b1a227f4aa29132fa6b0663005f9e9e5cf3a2c9a30bda587eed",
+      "updated_at": "2026-11-26T09:20:54Z"
+    },
+    {
+      "id": 795133521,
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg.blockmap",
+      "size": 121624,
+      "digest": "sha256:99d510227b23c61f449d09cba34b8714337116366d01bfc3acfeb45bd77b9076",
+      "updated_at": "2026-11-26T09:20:55Z"
+    },
+    {
+      "id": 795133566,
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg",
+      "size": 122272719,
+      "digest": "sha256:9fd7a39ef1d6e2cbd4ad513b4daebb6fa1304dc66e946231d45658e3bdeedd6b",
+      "updated_at": "2026-11-26T09:20:58Z"
+    },
+    {
+      "id": 795133788,
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg.blockmap",
+      "size": 129372,
+      "digest": "sha256:3399c6c80d91bd433ed6fce6ba651a441a03497be20d958bb21de65646948d49",
+      "updated_at": "2026-11-26T09:20:59Z"
+    },
+    {
+      "id": 793370640,
+      "name": "RUFUS-Race-Manager-Setup-1.1.10.exe",
+      "size": 101311544,
+      "digest": "sha256:599e41b8e9bc07669fd6a165fc85c69c8bfe7b340c9093ce5ffc48c0e4a3f66d",
+      "updated_at": "2026-11-25T22:22:42Z"
+    },
+    {
+      "id": 793370951,
+      "name": "RUFUS-Race-Manager-Setup-1.1.10.exe.blockmap",
+      "size": 104558,
+      "digest": "sha256:adeb84e112d664a3b4681d2510258c309fea47785683fbad3169552f0339b7a5",
+      "updated_at": "2026-11-25T22:22:43Z"
+    },
+    {
+      "id": 795133823,
+      "name": "SHA256SUMS-MAC.txt",
+      "size": 698,
+      "digest": "sha256:86c278d0a21575605bb4f0b1335ab741231bab0f674e96e5d6afe0868d84754c",
+      "updated_at": "2026-11-26T09:21:00Z"
+    },
+    {
+      "id": 793371157,
+      "name": "SHA256SUMS.txt",
+      "size": 493,
+      "digest": "sha256:134916fdc9162e894cd550bb7c9f507226469d421122f7bfddd8294c9713f127",
+      "updated_at": "2026-11-25T22:22:46Z"
+    }
+  ],
+  "macAnonymousDownloads": [
+    {
+      "name": "RELEASE-NOTES-1.1.10-MAC-EN.md",
+      "bytes": 810,
+      "sha256": "d5e3fe09baa19117d1978ab518a7c53d3602920e7444f6904b72d6a71c101a1b",
+      "anonymous": true
+    },
+    {
+      "name": "RELEASE-SOURCES-1.1.10-MAC.json",
+      "bytes": 3981,
+      "sha256": "d7a517914dda3f4f10ed68197ca32341ef2f9d6e13f1118aea43478a087e3af7",
+      "anonymous": true
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg",
+      "bytes": 115831369,
+      "sha256": "d456f0c15f2e6b1a227f4aa29132fa6b0663005f9e9e5cf3a2c9a30bda587eed",
+      "anonymous": true
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg.blockmap",
+      "bytes": 121624,
+      "sha256": "99d510227b23c61f449d09cba34b8714337116366d01bfc3acfeb45bd77b9076",
+      "anonymous": true
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg",
+      "bytes": 122272719,
+      "sha256": "9fd7a39ef1d6e2cbd4ad513b4daebb6fa1304dc66e946231d45658e3bdeedd6b",
+      "anonymous": true
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg.blockmap",
+      "bytes": 129372,
+      "sha256": "3399c6c80d91bd433ed6fce6ba651a441a03497be20d958bb21de65646948d49",
+      "anonymous": true
+    },
+    {
+      "name": "SHA256SUMS-MAC.txt",
+      "bytes": 698,
+      "sha256": "86c278d0a21575605bb4f0b1335ab741231bab0f674e96e5d6afe0868d84754c",
+      "anonymous": true
+    },
+    {
+      "name": "latest-mac.yml",
+      "bytes": 530,
+      "sha256": "89a1c2b8dd25fa62ed020bfb2cfe9bdacb903b5c5eebaefde2115a5f60a99747",
+      "anonymous": true
+    }
+  ],
+  "windowsUnchanged": true,
+  "previousReleaseUnchanged": true,
+  "stableLatest": true,
+  "workflow": {
+    "runId": 45791070672,
+    "jobId": 139809934686,
+    "headSha": "7736e7a7956f73810d7f0f5482fc2307d07b6a37",
+    "conclusion": "success",
+    "url": "https://github.com/rufusTeam/rufus-rm-updates/actions/runs/45791070672"
+  }
+}

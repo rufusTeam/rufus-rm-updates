@@ -1,4 +1,4 @@
-name: Publish verified RRM 1.1.10 Mac assets
+name: Archived RRM 1.1.10 Mac publication
 on:
   push:
     branches: [codex/rrm1110-mac-publish-20261126]
@@ -12,11 +12,11 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: ${{ github.repository == 'rufusTeam/rufus-rm-updates' && github.ref == 'refs/heads/codex/rrm1110-mac-publish-20261126' && github.event.head_commit.message == 'Publish verified Mac 1.1.10 assets after accepted QA' }}
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:

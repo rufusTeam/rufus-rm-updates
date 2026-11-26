@@ -1,0 +1,92 @@
+{
+  "version": "1.1.10",
+  "environment": "production",
+  "preparedAtUtc": "2026-11-26T09:13:53.026499+00:00",
+  "buildSources": {
+    "rrm": "63f0dac148191e898f7d410141a332df9ae32840",
+    "electron": "83944fc1329d0b2206a644cf5a8c09161f7b505c",
+    "windowsAcceptedRuntime": "957ea2f7dc15712a614ffd6c427c0cd5feb41f7e",
+    "backend2Reference": "1840bf737ab7689873b8f7404ab08c777091d2aa"
+  },
+  "runtimeTreesIdenticalToWindowsAcceptedSource": true,
+  "macOnlySourceDelta": "Three exact isolated packaging/launcher branch allowlist additions; no runtime delta.",
+  "rrmAcceptanceCommit": "f5d98d82e78874540d5a970a605f9122a876a2b8",
+  "acceptanceUrl": "https://github.com/rufusTeam/rrm/blob/f5d98d82e78874540d5a970a605f9122a876a2b8/docs/releases/1.1.10-mac-race-cam-acceptance-20261126.md",
+  "fourCoreTrees": {
+    "passings": "a7e5cbacce9fc84d630f064553af174ef70e85a2",
+    "rankings": "da94b124dbfaa3423ef6ec3b1ddd137451f03229",
+    "constants": "c5a86ff87ea134f202a80d3b21f6f7531086d482",
+    "entitlements": "7138d45b39a2a4227eba51a05e53b38c41181ea5"
+  },
+  "artifacts": [
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg",
+      "bytes": 115831369,
+      "sha256": "d456f0c15f2e6b1a227f4aa29132fa6b0663005f9e9e5cf3a2c9a30bda587eed"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg.blockmap",
+      "bytes": 121624,
+      "sha256": "99d510227b23c61f449d09cba34b8714337116366d01bfc3acfeb45bd77b9076"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg",
+      "bytes": 122272719,
+      "sha256": "9fd7a39ef1d6e2cbd4ad513b4daebb6fa1304dc66e946231d45658e3bdeedd6b"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg.blockmap",
+      "bytes": 129372,
+      "sha256": "3399c6c80d91bd433ed6fce6ba651a441a03497be20d958bb21de65646948d49"
+    }
+  ],
+  "packageChecks": [
+    {
+      "architecture": "arm64",
+      "signature": "Developer ID Application: RUNONRUFUS, CORP. (7WWBH4GF33)",
+      "signedNotarizedStapledGatekeeper": true,
+      "packagedBackendStartup": "PASS",
+      "nativePendingBodyUuidReopen": "PASS",
+      "signedSimulatorCasesPassed": 22,
+      "asarSha256": "3a8fe10c736b49296a100d109c6b50d0e18624539e78d60eaab8f867fa9bb12b",
+      "nativeExecution": "native arm64"
+    },
+    {
+      "architecture": "x64",
+      "signature": "Developer ID Application: RUNONRUFUS, CORP. (7WWBH4GF33)",
+      "signedNotarizedStapledGatekeeper": true,
+      "packagedBackendStartup": "PASS",
+      "nativePendingBodyUuidReopen": "PASS",
+      "signedSimulatorCasesPassed": 22,
+      "asarSha256": "3a8fe10c736b49296a100d109c6b50d0e18624539e78d60eaab8f867fa9bb12b",
+      "nativeExecution": "Rosetta x64"
+    }
+  ],
+  "productionArm64Upgrade": {
+    "previousVersion": "1.1.9",
+    "installedVersion": "1.1.10",
+    "sessionEventsRetained": true,
+    "pauseLiveSeparateNormalReopensPassed": true,
+    "profileFilesByteIdenticalBeforeFirstLaunch": 12370,
+    "allInstalledFilesAndSymlinksMatchDmg": 5645
+  },
+  "raceCamPhysicalPhoneQa": {
+    "environment": "stage-isolated",
+    "candidate": "1.1.10-rc.1 arm64",
+    "liveVisible": true,
+    "pauseRewindReturnToLive": true,
+    "finishFromRrm": true,
+    "recordedDurationUi": "1m 32s",
+    "recordedGapsUi": 0,
+    "normalAppReopenVisibleReplay": true
+  },
+  "verificationLimits": [
+    "Intel native checks ran through Rosetta, not on physical Intel hardware.",
+    "No fresh human production Google login or complete online updater installation repeated.",
+    "No new production race data, publication, reset or MCP grant created for QA.",
+    "No ordinary upload HTTP ACK or customer queue recovery inferred from local zero counters.",
+    "No phone background/screen-lock/network-loss/long-soak or independent archive-byte audit repeated.",
+    "Focused source tests overlap; no global clean-suite or repository-wide lint claim."
+  ],
+  "deploymentScope": "Mac artifacts only; existing Windows six assets/latest.yml and alias retained; no web/backend/Journey/Cognito deployment."
+}

@@ -1,0 +1,11 @@
+version: 1.1.10
+files:
+  - url: RUFUS-Race-Manager-1.1.10-arm64.dmg
+    sha512: m9DbQBExLadirZ/elafjL2OwuC4Il/1yTvzUrY/U3JMzN3BjPkzwTu9n2WOCUB+83FmU1PDRMEdPtBXFq316RA==
+    size: 115831369
+  - url: RUFUS-Race-Manager-1.1.10-x64.dmg
+    sha512: gCpy7wfRxOlIKLGKtb5hO6jgSQb7YGeR1j2UkhRimF8P9/Bm1yvrixUoDgiwCfWHdsu0dJIHcal/lSu6dOIyaw==
+    size: 122272719
+path: RUFUS-Race-Manager-1.1.10-x64.dmg
+sha512: gCpy7wfRxOlIKLGKtb5hO6jgSQb7YGeR1j2UkhRimF8P9/Bm1yvrixUoDgiwCfWHdsu0dJIHcal/lSu6dOIyaw==
+releaseDate: '2026-11-25T23:07:15.675Z'
