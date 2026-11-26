@@ -1,0 +1,203 @@
+{
+  "repository": "rufusTeam/rufus-rm-updates",
+  "releaseId": 458713908,
+  "tag": "v1.1.10",
+  "expectedWindows": {
+    "name": "RUFUS Race Manager 1.1.10 \u2014 Windows x64",
+    "body": "# RUFUS Race Manager 1.1.10 \u2014 Windows x64\n\n- Corrected simulation input for checkpoints with readers, without readers, and with partial reader assignments.\n- Improved simulation confirmation and completion feedback.\n- Fixed a false account-not-found warning when reopening the desktop app.\n- Preserved Pause/Live selection and completed-sync history across normal restarts.\n- Retained validated production cloud-upload acknowledgements and manual participant-conflict handling.\n\nThe Windows installer is signed by RunOnRufus, Corp. Upgrade over the existing installation; keep your profile and pending changes, and do not uninstall or delete profile folders.\n\nThis release contains Windows x64 only. Mac downloads remain on the existing 1.1.9 release and its assets are unchanged. The coordinated Mac update will follow separately.\n",
+    "assets": [
+      {
+        "id": 793370995,
+        "name": "latest.yml",
+        "size": 368,
+        "digest": "sha256:9bf949865586c1d14f99354993186e8f416de1c2a5734c872016edd455c33458",
+        "updated_at": "2026-11-25T22:22:44Z"
+      },
+      {
+        "id": 793371026,
+        "name": "RELEASE-NOTES-1.1.10-WINDOWS-EN.md",
+        "size": 834,
+        "digest": "sha256:996eeeb7927063998a0b6d48d8595c0c1815f3b3ff9f6ffe669bdf1d8284774a",
+        "updated_at": "2026-11-25T22:22:45Z"
+      },
+      {
+        "id": 793371134,
+        "name": "RELEASE-SOURCES-1.1.10-WINDOWS.json",
+        "size": 4966,
+        "digest": "sha256:0bc5762c94b846aa729472e47a3deb11f9a81de58b6cde20e7fcbd7132b3759d",
+        "updated_at": "2026-11-25T22:22:46Z"
+      },
+      {
+        "id": 793370640,
+        "name": "RUFUS-Race-Manager-Setup-1.1.10.exe",
+        "size": 101311544,
+        "digest": "sha256:599e41b8e9bc07669fd6a165fc85c69c8bfe7b340c9093ce5ffc48c0e4a3f66d",
+        "updated_at": "2026-11-25T22:22:42Z"
+      },
+      {
+        "id": 793370951,
+        "name": "RUFUS-Race-Manager-Setup-1.1.10.exe.blockmap",
+        "size": 104558,
+        "digest": "sha256:adeb84e112d664a3b4681d2510258c309fea47785683fbad3169552f0339b7a5",
+        "updated_at": "2026-11-25T22:22:43Z"
+      },
+      {
+        "id": 793371157,
+        "name": "SHA256SUMS.txt",
+        "size": 493,
+        "digest": "sha256:134916fdc9162e894cd550bb7c9f507226469d421122f7bfddd8294c9713f127",
+        "updated_at": "2026-11-25T22:22:46Z"
+      }
+    ]
+  },
+  "previousRelease": {
+    "id": 454687283,
+    "tag": "v1.1.9",
+    "body": "# RUFUS Race Manager 1.1.9 \u2014 Windows x64\n\n- Improved cloud synchronization recovery while preserving pending local changes.\n- Fixed Windows Pause/Live controls so the interface reflects the confirmed mode immediately and retains the selected mode after reopening.\n- Improved recovery of cloud sync status after an interrupted local subscription; unavailable status is shown explicitly.\n- Retains local Results and Race Progress preparation after reopening.\n\nThe Windows installer is signed by RunOnRufus, Corp. Existing profiles and pending changes are retained; do not uninstall or delete profile folders before upgrading.\n\nThis release contains Windows x64 only. Mac downloads remain on the existing 1.1.8 release and its assets are unchanged.\n\nIf you already installed an earlier private 1.1.9 candidate, install this corrected Windows installer manually; an update with the same version number is not offered automatically.\n\n\n## macOS Apple silicon and Intel\n\n- Live and Pause now confirm the backend mode immediately and recover local sync status after interrupted subscription updates.\n- Existing sessions, local profiles and queued changes are retained; unavailable status and mode-change failures are shown explicitly.\n- Participant bib/chip synchronization conflicts support explicit correction. Results and Race Progress prepare current local race data independently of ordinary uploads.\n- Complete packaged-backend startup and required dependency checks improve startup reliability.\n\nBoth Mac installers are signed and notarized. Mac QA covered retained sessions and Pause/Live after normal reopen; Intel was exercised under Rosetta. No claim is made that a customer queue was recovered by these tests.\n\nThe existing Windows installer, blockmap, latest.yml, source manifest, notes and checksums are unchanged. Separate Mac sources/checksums document the accepted platform build.",
+    "assets": [
+      {
+        "id": 780646214,
+        "name": "latest-mac.yml",
+        "size": 526,
+        "digest": "sha256:eabccb16eb170f261b72522e72eb25bcd9c13fd887c9aa11a7d51adc37dc000c",
+        "updated_at": "2026-11-22T22:19:54Z"
+      },
+      {
+        "id": 780173257,
+        "name": "latest.yml",
+        "size": 365,
+        "digest": "sha256:ba1e0a3ada359a03d1fd74b4cbba6f74afc8ef6ba415a300fd1f45f0199ece3b",
+        "updated_at": "2026-11-22T19:18:58Z"
+      },
+      {
+        "id": 780646065,
+        "name": "RELEASE-NOTES-1.1.9-MAC-EN.md",
+        "size": 815,
+        "digest": "sha256:199168dca19ba9d300cc9f202f997efc11ebd65945da03c1b0137447ea84908d",
+        "updated_at": "2026-11-22T22:19:50Z"
+      },
+      {
+        "id": 780173305,
+        "name": "RELEASE-NOTES-1.1.9-WINDOWS-EN.md",
+        "size": 930,
+        "digest": "sha256:1388f54fc265595a9061dcf79f24096238fc768f3726c0c220bb0c9afa2c5f5a",
+        "updated_at": "2026-11-22T19:18:59Z"
+      },
+      {
+        "id": 780646099,
+        "name": "RELEASE-SOURCES-1.1.9-MAC.json",
+        "size": 6242,
+        "digest": "sha256:730c391dda996190dae14a097b066e142269218e527ae86c05c8018c46a59db9",
+        "updated_at": "2026-11-22T22:19:51Z"
+      },
+      {
+        "id": 780173348,
+        "name": "RELEASE-SOURCES-1.1.9-WINDOWS.json",
+        "size": 5138,
+        "digest": "sha256:88efda2ba7db883714d2888a27395c7cbb15c12b5392863f05cad100c4378d2b",
+        "updated_at": "2026-11-22T19:19:00Z"
+      },
+      {
+        "id": 780646233,
+        "name": "RUFUS-Race-Manager-1.1.9-arm64.dmg",
+        "size": 115821679,
+        "digest": "sha256:c5706b71b93a7746e310d4297fa523c933d75c31fd037ac32bcf84e4d297ee43",
+        "updated_at": "2026-11-22T22:19:59Z"
+      },
+      {
+        "id": 780646132,
+        "name": "RUFUS-Race-Manager-1.1.9-arm64.dmg.blockmap",
+        "size": 121827,
+        "digest": "sha256:bf5ec42aa99fc7e7cc85478ee06b0f74d3a51a33b237184e82d27d3dda974aab",
+        "updated_at": "2026-11-22T22:19:52Z"
+      },
+      {
+        "id": 780646498,
+        "name": "RUFUS-Race-Manager-1.1.9-x64.dmg",
+        "size": 122272290,
+        "digest": "sha256:d3e83250b3238de6dba6f0194e6675776a3e8820034714feac32f72f1e4b5a33",
+        "updated_at": "2026-11-22T22:20:05Z"
+      },
+      {
+        "id": 780646159,
+        "name": "RUFUS-Race-Manager-1.1.9-x64.dmg.blockmap",
+        "size": 129328,
+        "digest": "sha256:46659dc47e549f54f98cb7c5c653b0979eacc83c5b0d3ab7c7d162d66e58481a",
+        "updated_at": "2026-11-22T22:19:53Z"
+      },
+      {
+        "id": 780172953,
+        "name": "RUFUS-Race-Manager-Setup-1.1.9.exe",
+        "size": 101305320,
+        "digest": "sha256:555892263358b70148b6522c840eea2fa967208f6d51123fe7bef8d5a053a1d4",
+        "updated_at": "2026-11-22T19:18:56Z"
+      },
+      {
+        "id": 780173230,
+        "name": "RUFUS-Race-Manager-Setup-1.1.9.exe.blockmap",
+        "size": 104268,
+        "digest": "sha256:d45fc828f803da55a2312f6b42b656bdefaf4b3067849270e09878783289f4f9",
+        "updated_at": "2026-11-22T19:18:57Z"
+      },
+      {
+        "id": 780646191,
+        "name": "SHA256SUMS-MAC.txt",
+        "size": 692,
+        "digest": "sha256:afd433a6b67f6c3a702c0ed5eec91dfdfe4b718b2e28cb8bf3b7ac2e4119fd77",
+        "updated_at": "2026-11-22T22:19:53Z"
+      },
+      {
+        "id": 780173381,
+        "name": "SHA256SUMS.txt",
+        "size": 489,
+        "digest": "sha256:0159b10abe3c1ad416290f6df89308aa217d2b6ab2e8049d64154efaf2fd3906",
+        "updated_at": "2026-11-22T19:19:00Z"
+      }
+    ]
+  },
+  "s3Prefix": "https://rufus-electron-app-downloads.s3.us-east-1.amazonaws.com/releases/1.1.10/mac-20261126-83944fc/",
+  "macAssets": [
+    {
+      "name": "RELEASE-NOTES-1.1.10-MAC-EN.md",
+      "bytes": 810,
+      "sha256": "d5e3fe09baa19117d1978ab518a7c53d3602920e7444f6904b72d6a71c101a1b"
+    },
+    {
+      "name": "RELEASE-SOURCES-1.1.10-MAC.json",
+      "bytes": 3981,
+      "sha256": "d7a517914dda3f4f10ed68197ca32341ef2f9d6e13f1118aea43478a087e3af7"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg",
+      "bytes": 115831369,
+      "sha256": "d456f0c15f2e6b1a227f4aa29132fa6b0663005f9e9e5cf3a2c9a30bda587eed"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-arm64.dmg.blockmap",
+      "bytes": 121624,
+      "sha256": "99d510227b23c61f449d09cba34b8714337116366d01bfc3acfeb45bd77b9076"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg",
+      "bytes": 122272719,
+      "sha256": "9fd7a39ef1d6e2cbd4ad513b4daebb6fa1304dc66e946231d45658e3bdeedd6b"
+    },
+    {
+      "name": "RUFUS-Race-Manager-1.1.10-x64.dmg.blockmap",
+      "bytes": 129372,
+      "sha256": "3399c6c80d91bd433ed6fce6ba651a441a03497be20d958bb21de65646948d49"
+    },
+    {
+      "name": "SHA256SUMS-MAC.txt",
+      "bytes": 698,
+      "sha256": "86c278d0a21575605bb4f0b1335ab741231bab0f674e96e5d6afe0868d84754c"
+    },
+    {
+      "name": "latest-mac.yml",
+      "bytes": 530,
+      "sha256": "89a1c2b8dd25fa62ed020bfb2cfe9bdacb903b5c5eebaefde2115a5f60a99747"
+    }
+  ],
+  "publicationTitle": "RUFUS Race Manager 1.1.10 \u2014 Windows and macOS",
+  "finalBody": "# RUFUS Race Manager 1.1.10 \u2014 Windows and macOS\n\n- Corrected simulation input for checkpoints with readers, without readers, and with partial reader assignments.\n- Improved simulation confirmation and completion feedback.\n- Fixed a false account-not-found warning when reopening the desktop app.\n- Preserved Pause/Live selection and completed-sync history across normal restarts.\n- Retained validated production cloud-upload acknowledgements and manual participant-conflict handling.\n\nThe Windows installer is signed by RunOnRufus, Corp. Upgrade over the existing installation; keep your profile and pending changes, and do not uninstall or delete profile folders.\n\nThis release includes Windows x64 and macOS installers for Apple silicon and Intel.\n\n## macOS Apple silicon and Intel\n\n- Race Cam: watch live and recorded checkpoint footage, pause, rewind, return to live and finish a recording from RRM. Organization camera access is required.\n- Includes the accepted simulation, account-reopen and cloud-sync improvements listed above.\n- Existing sessions, local profiles and queued changes are retained. Install over the existing app.\n\nBoth Mac installers are Developer ID signed, notarized and stapled. Production arm64 upgrade/session/Pause/Live/reopen checks passed. The signed isolated arm64 candidate passed a physical-phone Live, normal-finalization and saved-replay cycle after reopening. Intel native checks ran via Rosetta.\n\nThe six existing Windows assets, including latest.yml, remain unchanged. Separate Mac notes, source manifest and SHA256SUMS-MAC.txt identify the accepted Mac builds and QA limits.\n"
+}

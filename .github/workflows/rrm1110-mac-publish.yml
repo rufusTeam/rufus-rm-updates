@@ -1,0 +1,31 @@
+name: Publish verified RRM 1.1.10 Mac assets
+on:
+  push:
+    branches: [codex/rrm1110-mac-publish-20261126]
+    paths:
+      - .github/workflows/rrm1110-mac-publish.yml
+      - releases/1.1.10/mac/**
+permissions:
+  contents: read
+concurrency:
+  group: rrm1110-mac-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: ${{ github.repository == 'rufusTeam/rufus-rm-updates' && github.ref == 'refs/heads/codex/rrm1110-mac-publish-20261126' && github.event.head_commit.message == 'Publish verified Mac 1.1.10 assets after accepted QA' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check reviewed publication plan digest
+        run: echo '82e0d5da144766da08f3797ac5b0feaa3ce0aac68ee92688944aff7a6c855446  releases/1.1.10/mac/publication-plan.json' | sha256sum --check --strict
+      - name: Check protected release and asset guards
+        run: python3 releases/1.1.10/mac/test_publication_guards.py
+      - name: Verify accepted S3 bodies and add only the Mac assets
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 releases/1.1.10/mac/publish_mac.py
